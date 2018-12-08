@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Google.Protobuf" Version="3.6.1" />
+    <PackageReference Include="Grpc.Tools" Version="1.17.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+ <ItemGroup>
+    <Protobuf Include="../s2clientprotocol/common.proto" Link="common.proto" GrpcServices="Client" ProtoCompile="false" />
+	<Protobuf Include="../s2clientprotocol/data.proto" Link="data.proto" GrpcServices="Client" ProtoCompile="false" />
+	<Protobuf Include="../s2clientprotocol/debug.proto" Link="debug.proto" GrpcServices="Client" ProtoCompile="false" />
+	<Protobuf Include="../s2clientprotocol/error.proto" Link="error.proto" GrpcServices="Client" ProtoCompile="false" />
+	<Protobuf Include="../s2clientprotocol/query.proto" Link="query.proto" GrpcServices="Client" ProtoCompile="false" />
+	<Protobuf Include="../s2clientprotocol/raw.proto" Link="raw.proto" GrpcServices="Client" ProtoCompile="false" />
+	<Protobuf Include="../s2clientprotocol/sc2api.proto" Link="sc2api.proto" GrpcServices="Client" ProtoCompile="false" />
+	<Protobuf Include="../s2clientprotocol/score.proto" Link="score.proto" GrpcServices="Client" ProtoCompile="false" />
+	<Protobuf Include="../s2clientprotocol/spatial.proto" Link="spatial.proto" GrpcServices="Client" ProtoCompile="false" />
+	<Protobuf Include="../s2clientprotocol/ui.proto" Link="ui.proto" GrpcServices="Client" ProtoCompile="false" />
+	
+  </ItemGroup>
+</Project>
